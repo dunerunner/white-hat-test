@@ -1,0 +1,14 @@
+<div class="game-preview">
+  <div *ngIf="gameJackpot" class="game-jackpot">
+    £ {{gameJackpot.amount}}
+  </div>
+
+  <div class="game-overlay">
+    <button class="game-play-button" (click)="launchGame()">Play</button>
+  </div>
+
+  <div class="ribbon ribbon-top-left" *ngIf="game.categories.includes('new')"><span>New</span></div>
+  <div class="ribbon ribbon-top-right" *ngIf="game.categories.includes('top')"><span>Top</span></div>
+
+  <img class="game-image" [src]="game.image" />
+</div>

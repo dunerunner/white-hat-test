@@ -1,0 +1,13 @@
+.game-feed {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 60px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.game-item {
+  flex: 0 0 20%;
+}
+
+
