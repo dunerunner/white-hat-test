@@ -52,6 +52,9 @@ export class GameFeedComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.gamesSubscription.unsubscribe();
     this.routeSubscription.unsubscribe();
+    if(this.jackpotIntervalInstance) {
+      clearInterval(this.jackpotIntervalInstance);
+    }
   }
 
 }
